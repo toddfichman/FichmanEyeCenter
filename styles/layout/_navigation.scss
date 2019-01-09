@@ -1,0 +1,119 @@
+
+
+.navbar {
+    background-color: $light-gray;
+    border: none;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+
+    &-logo {
+        height: 8rem;
+        width: auto;
+    }
+
+    &-header {
+        color: $color-white !important;
+    }
+
+    &-inverse {
+
+        & .navbar-toggle {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+            margin-top: 1.8rem;
+            
+
+            &:focus {
+                background-color: $color-secondary;
+                border-color: $color-secondary;
+            }
+
+            &:hover {
+                background-color: $color-secondary;
+            }
+        }
+        & .navbar-collapse, .navbar-inverse .navbar-form {
+            
+        }
+
+    } & .navbar-nav>li>a {
+        color: $color-primary;
+        text-align: center;
+        margin: none;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &::before {
+            color: $color-primary;
+        }
+
+        &::after {
+            color: $color-primary;
+        }
+
+        
+
+    }
+
+    &-toggle.collapsed {
+        border-color: $color-primary !important;
+        background-color: $color-primary !important;
+
+    }
+
+    
+}
+
+//rounds nav options when clicked and gives background color
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: $medium-gray;
+    border-radius: 10rem;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: $color-primary;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0px;
+
+        &-right {
+            margin-top: 1.3rem;
+            font-size: 2rem;
+        }
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: $color-primary;
+
+    }
+
+    // .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    //     color: $color-primary;
+    // }
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: $color-primary;
+    background-color: none;
+}
+
+//changed color for options of dropdown menu items 
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: $color-primary;
+
+        &:focus {
+            color: $color-primary;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+

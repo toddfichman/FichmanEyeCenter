@@ -1,0 +1,62 @@
+/* universal selector will select every element on the page and apply the properties you describe */
+*, 
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //root font-size is put in html selector 
+  // defines what 1rem is 
+  font-size: 62.5%; // 1 rem will now equal 10px (10/16 = 62.5% -> 16px is default font-size) 
+
+  // @include respond(phone) { 
+  //   font-size: 50%;
+  // }
+  //would be the same at tab-port so don't need it
+
+
+  //need to put larger media querys before smaller ones in desktop first
+
+  // @include respond(tab-land) { //width < 900?
+  //   font-size: 56.25%;  //1rem = 9px --> 9/16 = 56.25%
+  // }
+  
+  // @include respond(tab-port) { //width < 600?
+  //   font-size: 50%; //1rem = 8px --> 8/16 = 50%
+  // }
+
+  // //uses min-width so goes last
+  // @include respond(big-desktop) {
+  //   font-size: 75%; //1rem = 12px --> 12/16 = 75%
+  // }
+
+
+}
+
+// all properties in body are inherited to all its child elements 
+body {
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+  background-color: $light-gray;
+  
+  // padding: 3rem; // this creates the white boarder around the entire webpage
+
+  // @include respond(tab-port) { 
+  //   padding: 0; 
+  // }
+
+
+}
+
+.app {
+  width: 100%
+}
+
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

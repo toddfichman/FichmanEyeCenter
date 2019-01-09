@@ -1,0 +1,27 @@
+.panel-default {
+    text-align: center;
+    box-shadow: 0 0 1rem #CCCCCC;
+
+    &>.panel-heading {
+        border: none;
+        background-color: $color-white;
+    }
+    
+}
+
+.panel-body {
+    font-family: $secondary-font;
+}
+
+.card {
+
+    &-header {
+        color: $color-primary;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    &-button {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,28 @@
+.jumbotron {
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .35);
+    color: $color-white;
+    // box-shadow: inset 0 0 0 2000px rgba(96, 176, 244,0.5);
+
+
+    &-container {
+        font-family: $secondary-font;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    &-header {
+        margin-bottom: 2rem;
+        color: $color-white;
+        font-weight: bolder;
+        text-shadow: 0 1.5rem 2rem rgba($color-black, .35);
+    }
+}
+

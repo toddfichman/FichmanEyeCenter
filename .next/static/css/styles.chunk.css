@@ -1,0 +1,198 @@
+/* universal selector will select every element on the page and apply the properties you describe */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+  background-color: #f5f7f8; }
+
+.app {
+  width: 100%; }
+
+::selection {
+  background-color: #60b0f4;
+  color: #fff; }
+
+.btn-primary {
+  background-color: #60b0f4;
+  border-color: #60b0f4; }
+
+.nav-btn {
+  font-size: 3rem; }
+
+.panel-default {
+  text-align: center;
+  box-shadow: 0 0 1rem #CCCCCC; }
+  .panel-default > .panel-heading {
+    border: none;
+    background-color: #fff; }
+
+.panel-body {
+  font-family: "Open Sans", sans-serif; }
+
+.card-header {
+  color: #60b0f4;
+  font-size: 2.5rem;
+  margin-top: 1rem; }
+
+.card-button {
+  margin-top: 1rem; }
+
+.footer-basic-centered {
+  background-color: #00487C;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 18px "Open Sans", sans-serif;
+  padding: 45px;
+  margin-top: 80px; }
+
+.footer-basic-centered .footer-company-motto {
+  color: #fff;
+  font-size: 24px;
+  margin: 0; }
+
+.footer-basic-centered .footer-company-name {
+  color: #fff;
+  font-size: 14px;
+  margin: 0; }
+
+.footer-basic-centered .footer-links {
+  list-style: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 35px 0 23px;
+  margin: 0; }
+
+.footer-basic-centered .footer-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 600px) {
+  .footer-basic-centered {
+    padding: 35px; }
+  .footer-basic-centered .footer-company-motto {
+    font-size: 18px; }
+  .footer-basic-centered .footer-company-name {
+    font-size: 12px; }
+  .footer-basic-centered .footer-links {
+    font-size: 14px;
+    padding: 25px 0 20px; }
+  .footer-basic-centered .footer-links a {
+    line-height: 1.8; } }
+
+.jumbotron {
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 10rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+  color: #fff; }
+  .jumbotron-container {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+  .jumbotron-header {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.35); }
+
+.navbar {
+  background-color: #f5f7f8;
+  border: none;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25); }
+  .navbar-logo {
+    height: 8rem;
+    width: auto; }
+  .navbar-header {
+    color: #fff !important; }
+  .navbar-inverse .navbar-toggle {
+    background-color: #336799;
+    border-color: #336799;
+    margin-top: 1.8rem; }
+    .navbar-inverse .navbar-toggle:focus {
+      background-color: #336799;
+      border-color: #336799; }
+    .navbar-inverse .navbar-toggle:hover {
+      background-color: #336799; }
+  .navbar .navbar-nav > li > a {
+    color: #60b0f4;
+    text-align: center;
+    margin: none; }
+    .navbar .navbar-nav > li > a:hover {
+      color: #60b0f4; }
+    .navbar .navbar-nav > li > a::before {
+      color: #60b0f4; }
+    .navbar .navbar-nav > li > a::after {
+      color: #60b0f4; }
+  .navbar-toggle.collapsed {
+    border-color: #60b0f4 !important;
+    background-color: #60b0f4 !important; }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: #cdd1d5;
+  border-radius: 10rem; }
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #60b0f4; }
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px; }
+    .navbar-right {
+      margin-top: 1.3rem;
+      font-size: 2rem; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #60b0f4; } }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+  color: #60b0f4;
+  background-color: none; }
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #60b0f4; }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #60b0f4; }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+      color: #60b0f4; } }
+
+.card-row {
+  margin-bottom: 5rem; }
+
+.text-section {
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  text-align: center;
+  margin: 10rem 0 10rem 0;
+  color: #b8b8b5; }
+  .text-section-header {
+    margin: 3rem 0 3rem 0;
+    color: #60b0f4;
+    font-size: 5rem; }
+  .text-section-subtext {
+    margin: 3rem 0 3rem 0;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    color: #00487C; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

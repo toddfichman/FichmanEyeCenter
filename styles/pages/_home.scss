@@ -1,0 +1,27 @@
+.card-row {
+    margin-bottom: 5rem;
+}
+
+.text-section {
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    text-align: center;
+    margin: 10rem 0 10rem 0;
+    color: $dark-gray;
+    
+    
+    &-header {
+        margin: 3rem 0 3rem 0;
+        color: $color-primary;
+        font-size: 5rem;
+    }
+
+    &-subtext {
+        margin: 3rem 0 3rem 0;
+        font-size: 3rem;
+        font-family: $secondary-font;
+        font-style: italic;
+        color: $color-tertiary;
+    }
+    
+}
