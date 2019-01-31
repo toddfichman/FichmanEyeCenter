@@ -15,11 +15,11 @@ const Home = () => (
       title={`Fichman Eye Center | Home`}
       description={`Home page for Fichman Eye Center`}
     />
-    <Jumbotron style={{backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/fichman-doctors.jpg)`}} >
+    <Jumbotron style={{backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/fichman-doctors.jpg)`, backgroundRepeat: "no-repeat" }} > {/* backgroundSize:"contain", backgroundPosition: "center" */}
       <div className="jumbotron-container">
         <h1 className="jumbotron-header">Welcome to Fichman Eye Center</h1>
         <p>
-          <Button bsSize="large" bsStyle="primary">Schedule Appointment Today</Button>
+          <Button className="jumbotron-btn" bsSize="large" bsStyle="primary">Schedule Appointment Today</Button>
         </p>
       </div>
     </Jumbotron>

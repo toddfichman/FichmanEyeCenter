@@ -560,6 +560,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Nav"], {
         pullRight: true,
+        className: "nav-bar",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 56
@@ -29416,14 +29417,15 @@ var Home = function Home() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Jumbotron"], {
     style: {
-      backgroundImage: "linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/fichman-doctors.jpg)"
+      backgroundImage: "linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/fichman-doctors.jpg)",
+      backgroundRepeat: "no-repeat"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "jumbotron-container",
     __source: {
       fileName: _jsxFileName,
@@ -29444,6 +29446,7 @@ var Home = function Home() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+    className: "jumbotron-btn",
     bsSize: "large",
     bsStyle: "primary",
     __source: {

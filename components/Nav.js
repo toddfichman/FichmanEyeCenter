@@ -53,7 +53,7 @@ export default class Navigation extends Component {
           <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav pullRight>
+            <Nav pullRight className="nav-bar">
 
               <NavItem eventKey={0} href="#" className="nav-btn">
                 Home

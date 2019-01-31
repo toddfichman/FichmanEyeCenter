@@ -93,12 +93,31 @@ body {
     line-height: 1.8; } }
 
 .jumbotron {
-  height: 80vh;
+  height: 75vh;
   background-size: cover;
   position: relative;
   margin-bottom: 10rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
-  color: #fff; }
+  color: #fff;
+  padding: 0;
+  background-size: cover;
+  /* cover makes it so the image will always try to fit in the view port */
+  background-position: top;
+  /* this makes it so the top of the background-image always stays at the top of the page */
+  position: relative; }
+  @media only screen and (min-width: 112.5em) {
+    .jumbotron {
+      height: 70vh; } }
+  @media only screen and (max-width: 75em) {
+    .jumbotron {
+      height: 50vh; } }
+  @media only screen and (max-width: 56.25em) {
+    .jumbotron {
+      height: 30vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .jumbotron {
+      height: 35vh;
+      margin-bottom: 5rem; } }
   .jumbotron-container {
     font-family: "Open Sans", sans-serif;
     position: absolute;
@@ -111,6 +130,13 @@ body {
     color: #fff;
     font-weight: bolder;
     text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.35); }
+    @media only screen and (max-width: 37.5em) {
+      .jumbotron-header {
+        font-size: 2.7rem;
+        margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .jumbotron-btn {
+      font-size: 1.7rem; } }
 
 .navbar {
   background-color: #f5f7f8;
@@ -142,6 +168,9 @@ body {
       color: #60b0f4; }
     .navbar .navbar-nav > li > a::after {
       color: #60b0f4; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar .navbar-nav > li > a {
+        font-size: 2.2rem; } }
   .navbar-toggle.collapsed {
     border-color: #60b0f4 !important;
     background-color: #60b0f4 !important; }
@@ -163,7 +192,7 @@ body {
     color: #60b0f4; } }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-  color: #60b0f4;
+  color: #fff;
   background-color: none; }
 
 @media (max-width: 767px) {
