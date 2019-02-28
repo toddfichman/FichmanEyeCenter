@@ -28,9 +28,16 @@ body {
 .nav-btn {
   font-size: 3rem; }
 
+a {
+  text-decoration: none !important; }
+  a:focus {
+    outline: none; }
+  a:visited {
+    color: #60b0f4; }
+
 .panel-default {
   text-align: center;
-  box-shadow: 0 0 1rem #CCCCCC; }
+  box-shadow: 0 0 1rem #cccccc; }
   .panel-default > .panel-heading {
     border: none;
     background-color: #fff; }
@@ -40,11 +47,78 @@ body {
 
 .card-header {
   color: #60b0f4;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top: 1rem; }
+  .card-header-secondary {
+    font-size: 2rem;
+    color: #00487C;
+    margin-top: 1rem; }
 
 .card-button {
   margin-top: 1rem; }
+
+.contact-hours-wrapper {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #00487C;
+  width: 80%;
+  display: inline-block; }
+  @media only screen and (max-width: 37.5em) {
+    .contact-hours-wrapper {
+      font-size: 1.8rem;
+      width: 100%; } }
+
+.contact-hours-header {
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.contact-hours-info {
+  display: inline-block;
+  height: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem; }
+
+.contact-hours-date {
+  float: left; }
+
+.contact-hours-time {
+  float: right; }
+
+.map-col {
+  height: 35rem;
+  width: 35rem;
+  margin: auto;
+  margin-bottom: 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .map-col {
+      height: 30rem;
+      width: 30rem; } }
+
+.map-header {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  color: #60b0f4;
+  font-size: 5rem;
+  text-align: center; }
+
+.map-address {
+  font-size: 1.8rem;
+  text-align: center; }
+  .map-address-subtext {
+    font-family: "Open Sans", sans-serif;
+    color: #00487C; }
+  .map-address-top-line {
+    border-top: solid 1px #00487C;
+    display: inline;
+    padding-bottom: .3rem; }
+  .map-address-bottom-line {
+    border-bottom: solid 1px #00487C;
+    display: inline;
+    padding-bottom: .3rem; }
+
+.map-item {
+  position: relative !important;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
 
 .footer-basic-centered {
   background-color: #00487C;
@@ -78,6 +152,10 @@ body {
   text-decoration: none;
   color: inherit; }
 
+.footer-link {
+  margin-bottom: .5rem;
+  color: #fff; }
+
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 600px) {
   .footer-basic-centered {
@@ -90,10 +168,12 @@ body {
     font-size: 14px;
     padding: 25px 0 20px; }
   .footer-basic-centered .footer-links a {
-    line-height: 1.8; } }
+    line-height: 1.8; }
+  .footer-link {
+    margin-bottom: 0; } }
 
 .jumbotron {
-  height: 75vh;
+  height: 65vh;
   background-size: cover;
   position: relative;
   margin-bottom: 10rem;
@@ -110,10 +190,10 @@ body {
       height: 70vh; } }
   @media only screen and (max-width: 75em) {
     .jumbotron {
-      height: 50vh; } }
+      height: 55vh; } }
   @media only screen and (max-width: 56.25em) {
     .jumbotron {
-      height: 30vh; } }
+      height: 45vh; } }
   @media only screen and (max-width: 37.5em) {
     .jumbotron {
       height: 35vh;
@@ -130,13 +210,26 @@ body {
     color: #fff;
     font-weight: bolder;
     text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.35); }
-    @media only screen and (max-width: 37.5em) {
-      .jumbotron-header {
-        font-size: 2.7rem;
-        margin-bottom: 3rem; } }
+    .jumbotron-header-center {
+      color: #fff;
+      padding-bottom: 7rem;
+      font-weight: bolder;
+      text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.35); }
   @media only screen and (max-width: 37.5em) {
     .jumbotron-btn {
       font-size: 1.7rem; } }
+  .jumbotron h1 {
+    font-size: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .jumbotron h1 {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .jumbotron h1 {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .jumbotron h1 {
+        font-size: 2.7rem;
+        margin-bottom: 3rem; } }
 
 .navbar {
   background-color: #f5f7f8;
@@ -162,6 +255,9 @@ body {
     color: #60b0f4;
     text-align: center;
     margin: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navbar .navbar-nav > li > a {
+        font-size: 2.5rem; } }
     .navbar .navbar-nav > li > a:hover {
       color: #60b0f4; }
     .navbar .navbar-nav > li > a::before {

@@ -44,7 +44,7 @@ export default class Navigation extends Component {
   render() {
     return (
       <div>
-        <Navbar inverse collapseOnSelect bsStyle="custom" >
+        <Navbar inverse collapseOnSelect >
           <Navbar.Header>
 
 
@@ -56,10 +56,10 @@ export default class Navigation extends Component {
             <Nav pullRight className="nav-bar">
 
               <NavItem eventKey={0} href="#" className="nav-btn">
-                Home
+                <Link href="/"><a>Home</a></Link> 
               </NavItem>
               <NavDropdown eventKey={1} title="About" id="basic-nav-dropdown" className="nav-btn">
-                <MenuItem eventKey={1.1}><Link href="/about"><a>About</a></Link></MenuItem>
+                <MenuItem eventKey={1.1}><Link href="/about"><span><a>About</a></span></Link></MenuItem>
                 <MenuItem eventKey={1.2}>Another action</MenuItem>
                 <MenuItem eventKey={1.3}>Something else here</MenuItem>
                 <MenuItem divider />
@@ -83,13 +83,15 @@ export default class Navigation extends Component {
                   <MenuItem eventKey={3.3}>Separated link</MenuItem>
                 </NavDropdown> */}
 
-              <NavDropdown eventKey={2} title="Contact" id="basic-nav-dropdown" className="nav-btn">
+              {/* <NavDropdown eventKey={2} title="Contact" id="basic-nav-dropdown" className="nav-btn">
                 <MenuItem eventKey={2.1}>Action</MenuItem>
                 <MenuItem eventKey={2.2}>Another action</MenuItem>
                 <MenuItem eventKey={2.3}>Something else here</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={2.3}>Separated link</MenuItem>
-              </NavDropdown>
+              </NavDropdown> */}
+
+              
              
 
               {/* <Collapse >
@@ -110,13 +112,17 @@ export default class Navigation extends Component {
                 </NavDropdown>
               </Collapse> */}
 
-              <NavDropdown eventKey={3} title="Patient Education" id="basic-nav-dropdown" className="nav-btn">
+              <NavDropdown eventKey={3} title="Resources" id="basic-nav-dropdown" className="nav-btn">
                 <MenuItem eventKey={3.1}>Action</MenuItem>
                 <MenuItem eventKey={3.2}>Another action</MenuItem>
                 <MenuItem eventKey={3.3}>Something else here</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={3.3}>Separated link</MenuItem>
               </NavDropdown>
+
+              <NavItem eventKey={0} href="#" className="nav-btn">
+                <Link href="/contact"><a>Contact</a></Link> 
+              </NavItem>
               
             </Nav>
           </Navbar.Collapse>

@@ -39,6 +39,12 @@
         color: $color-primary;
         text-align: center;
         margin: none;
+
+        
+        @include respond(tab-port) {
+          font-size: 2.5rem;
+        }
+        
         
 
         &:hover {
@@ -69,6 +75,7 @@
 
     
 }
+
 
 //rounds nav options when clicked and gives background color
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {

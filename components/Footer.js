@@ -1,58 +1,43 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Link from "next/link";
 
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from "react-bootstrap";
 
 export default class Footer extends Component {
   render() {
     return (
-      // <footer className="footer">
-      //   <Row className="footer-top">
-      //     <Col xs={12} md={6} lg={3}>
-      //       Home
-      //     </Col>
-      //     <Col xs={12} md={6} lg={3}>
-      //       About
-      //     </Col>
-      //     <Col xs={12} md={6} lg={3}>
-      //       Patient Information
-      //     </Col>
-      //     <Col xs={12} md={6} lg={3}>
-      //       Contact
-      //     </Col>
+      <footer className="footer-basic-centered">
+        <h3 className="footer-company-motto">Fichman Eye Center</h3>
 
-      //   </Row>
+        <div className="footer-links">
+          <Row className="footer-top">
+            <Col xs={12} md={3} className="footer-link">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </Col>
+            <Col xs={12} md={3} className="footer-link">
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </Col>
+            <Col xs={12} md={3} className="footer-link">
+              <Link href="/">
+                <a>Resources</a>
+              </Link>
+            </Col>
+            <Col xs={12} md={3} className="footer-link">
+              <Link href="/contact">
+                <a>Contact</a>
+              </Link>
+            </Col>
+          </Row>
+        </div>
 
-      //   <Row className="footer-bottom">
-      //     <p>
-      //     Copyright ©2018. Fichman Eye Center. All Rights Reserved.
-      //     </p>
-      //   </Row>
-      // </footer>
-
-      <footer class="footer-basic-centered">
-
-			<p class="footer-company-motto">Fichman Eye Center</p>
-
-			<p class="footer-links">
-        <Row className="footer-top">
-           <Col xs={12}  md={3}>
-             Home
-           </Col>
-           <Col xs={12}  md={3}>
-             About
-           </Col>
-           <Col xs={12}  md={3}>
-             Patient Information
-           </Col>
-           <Col xs={12}  md={3}>
-             Contact
-           </Col>
-        </Row>
-			</p>
-
-			<p class="footer-company-name">Copyright ©2018. Fichman Eye Center. All Rights Reserved.</p>
-
-		</footer>
-    )
+        <p className="footer-company-name">
+          Copyright ©2018. Fichman Eye Center. All Rights Reserved.
+        </p>
+      </footer>
+    );
   }
 }
