@@ -10,6 +10,7 @@ class GoogleMap extends Component {
           <a
             href={`http://maps.google.com/?q=${this.props.mapSearch}`}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="map-address">
               <strong>{this.props.name} Office</strong>

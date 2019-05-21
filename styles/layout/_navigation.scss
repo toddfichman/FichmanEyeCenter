@@ -1,130 +1,219 @@
-
-
 .navbar {
-    background-color: $light-gray;
-    border: none;
-    padding: 1.2rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+  background-color: $light-gray;
+  border: none;
+  padding: 1.2rem;
+  margin-bottom: 0rem;
+  border-bottom: 1.5rem solid $color-primary;
+  
 
-    &-logo {
-        height: 8rem;
-        width: auto;
+  @include respond(tab-land) {
+    // padding: 1.2 0;
+  }
+
+  // &-container {
+  //   @include respond(tab-port) {
+  //     width: 100%;
+  //   }
+  // }
+
+  &-logo {
+    height: 8rem;
+    width: auto;
+  }
+
+  &-header {
+    color: $color-white !important;
+    // @include respond(tab-land) {
+    //   width: 100%
+    // }
+  }
+
+  &-inverse {
+    & .navbar-toggle {
+      background-color: $color-secondary;
+      border-color: $color-secondary;
+      margin-top: 1.8rem;
+
+      &:focus {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+      }
+
+      &:hover {
+        background-color: $color-secondary;
+      }
     }
 
-    &-header {
-        color: $color-white !important;
+    //links for mobal
+  }
+  & .navbar-nav > li > a {
+    color: $color-primary;
+    text-align: center;
+    margin: none;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
     }
 
-    &-inverse {
-
-        & .navbar-toggle {
-            background-color: $color-secondary;
-            border-color: $color-secondary;
-            margin-top: 1.8rem;
-            
-
-            &:focus {
-                background-color: $color-secondary;
-                border-color: $color-secondary;
-            }
-
-            &:hover {
-                background-color: $color-secondary;
-            }
-        }
-        
-        //links for mobal
-    } & .navbar-nav>li>a {
-        color: $color-primary;
-        text-align: center;
-        margin: none;
-
-        
-        @include respond(tab-port) {
-          font-size: 2.5rem;
-        }
-        
-        
-
-        &:hover {
-            color: $color-primary;
-        }
-
-        &::before {
-            color: $color-primary;
-        }
-
-        &::after {
-            color: $color-primary;
-        }
-
-        @include respond(phone) {
-          font-size: 2.2rem;
-        }
-
-        
-
+    &:hover {
+      color: $color-primary;
     }
 
-    &-toggle.collapsed {
-        border-color: $color-primary !important;
-        background-color: $color-primary !important;
-
+    &::before {
+      color: $color-primary;
     }
 
-    
+    &::after {
+      color: $color-primary;
+    }
+
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &-toggle.collapsed {
+    border-color: $color-primary !important;
+    background-color: $color-primary !important;
+  }
+
+  //area under dropdown for phone
+  &-nav .open .dropdown-menu {
+    @include respond(tab-port) {
+      text-align: center;
+      background-color: $medium-gray;
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+  }
 }
-
 
 //rounds nav options when clicked and gives background color
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background-color: $medium-gray;
-    border-radius: 10rem;
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: $color-primary;
+  border-radius: 10rem;
+  // border-top-left-radius: 5rem;
+  //   border-top-right-radius: 5rem;
+
+  @include respond(tab-port) {
+    background-color: $color-primary;
+    border-radius: 0;
+    border-top-left-radius: 11rem;
+    border-top-right-radius: 11rem;
+  }
 }
 
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: $color-primary;
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: $color-primary;
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        border-radius: 0px;
+  .navbar {
+    border-radius: 0px;
 
-        &-right {
-            margin-top: 1.3rem;
-            font-size: 2rem;
-        }
+    &-right {
+      margin-top: 1.3rem;
+      font-size: 2rem;
     }
+  }
 
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-        color: $color-primary;
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: $color-primary;
+    font-size: 2.5rem;
+    
+  }
 
-    }
-
-    // .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-    //     color: $color-primary;
-    // }
+  // .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+  //     color: $color-primary;
+  // }
 }
 
 //turns link white when clicked for drop down
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  color: $color-white;
+  background-color: none;
+}
+
+@media (max-width: 800px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:focus,
+  .navbar-inverse .navbar-nav > .open > a:hover {
     color: $color-white;
-    background-color: none;
+    border-radius: 0;
+    border-top-left-radius: 11rem;
+    border-top-right-radius: 11rem;
+  }
+
+  //changed color for options of dropdown menu items
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: $color-white;
+    font-size: 1.7rem;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    text-align: center;
+    background-color: #cdd1d5;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    box-shadow: none;
+  }
+
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:focus,
+  .navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: $color-primary;
+  }
 }
 
-//changed color for options of dropdown menu items 
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-        color: $color-primary;
-
-        &:focus {
-            color: $color-primary;
-        }
-
-        &:hover {
-            color: $color-primary;
-        }
-    }
+li.divider {
+  background: aquamarine;
 }
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: $color-primary;
+}

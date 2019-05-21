@@ -16,6 +16,8 @@ export default class MyDocument extends Document {
             href='/_next/static/style.scss'
           />
           
+          <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico" />
+          
         </Head>
         <body>
           <Main />

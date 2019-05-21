@@ -28,7 +28,7 @@
 	font: normal 18px $secondary-font;
 
 	padding: 45px;
-	margin-top: 80px;
+	// margin-top: 80px;
 }
 
 .footer-basic-centered .footer-company-motto{
@@ -48,13 +48,18 @@
 	font-weight: bold;
 	color:  $color-white;
 	padding: 35px 0 23px;
-	margin: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
 .footer-basic-centered .footer-links a{
 	display:inline-block;
 	text-decoration: none;
-	color: inherit;
+  color: inherit;
+  
+  &:hover {
+    color: #60b0f4;
+  }
 }
 
 .footer-link {

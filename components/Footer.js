@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
+import Router from "next/router";
 
 import { Grid, Row, Col } from "react-bootstrap";
 
@@ -11,22 +12,22 @@ export default class Footer extends Component {
 
         <div className="footer-links">
           <Row className="footer-top">
-            <Col xs={12} md={3} className="footer-link">
+            <Col xs={12} md={3}>
               <Link href="/">
                 <a>Home</a>
               </Link>
             </Col>
-            <Col xs={12} md={3} className="footer-link">
+            <Col xs={12} md={3}>
               <Link href="/about">
                 <a>About</a>
               </Link>
             </Col>
-            <Col xs={12} md={3} className="footer-link">
-              <Link href="/">
+            <Col xs={12} md={3}>
+              <Link href="/resources/patient-education">
                 <a>Resources</a>
               </Link>
             </Col>
-            <Col xs={12} md={3} className="footer-link">
+            <Col xs={12} md={3}>
               <Link href="/contact">
                 <a>Contact</a>
               </Link>

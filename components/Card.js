@@ -1,4 +1,5 @@
 import { Col, Panel, Button } from 'react-bootstrap'
+import Link from 'next/link';
 
 export default (props) => (
 
@@ -7,10 +8,10 @@ export default (props) => (
                 <Panel.Heading>
                 <Panel.Title componentClass="h3" className="card-header">{props.header}</Panel.Title>
                 </Panel.Heading>
-                <Panel.Body>
+                <Panel.Body className="card-body">
                     {props.content}
                     <br />
-                    <Button bsStyle="primary" className="card-button">{props.buttonText}</Button>
+                    <Button type="submit" bsStyle="primary" className="card-button" ><Link href={props.link}><a className="button-link">{props.buttonText}</a></Link></Button>
                 </Panel.Body>
                 
             </Panel>

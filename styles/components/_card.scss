@@ -8,15 +8,12 @@
   }
 }
 
-.panel-body {
-  font-family: $secondary-font;
-}
-
 .card {
   &-header {
     color: $color-primary;
     font-size: 3rem;
     margin-top: 1rem;
+
 
     &-secondary {
       font-size: 2rem;
@@ -24,6 +21,12 @@
       margin-top: 1rem;
     }
   }
+
+  &-body {
+    font-family: $secondary-font;
+    color: $color-tertiary;
+  }
+
 
   &-button {
     margin-top: 1rem;

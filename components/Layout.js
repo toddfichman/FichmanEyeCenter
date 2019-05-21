@@ -2,6 +2,8 @@ import { Component } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
+import '../styles/style.scss';
+
 class Layout extends Component {
   render() {
     return (
