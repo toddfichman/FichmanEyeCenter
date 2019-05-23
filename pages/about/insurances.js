@@ -2,25 +2,13 @@ import Layout from "../../components/Layout";
 import Meta from "../../components/Meta";
 import Slogan from "../../components/Slogan";
 
-// import "../../styles/style.scss";
-
-// import patientForm from '../forms/Fichman-Eye-Center-Patient-Information-2016.pdf'
-
-import {
-  Grid,
-  Row,
-  Col,
-  Jumbotron,
-  Image,
-  ListGroup,
-  ListGroupItem
-} from "react-bootstrap";
+import { Grid, Row, Col, Jumbotron } from "react-bootstrap";
 
 const Insurances = () => (
   <Layout>
     <Meta
       title={`Fichman Eye Center | Insurances We Accept`}
-      description={`Insurances We Accept`}
+      description={`Insurances Accepted at Fichman Eye Center`}
     />
 
     <Jumbotron
@@ -57,7 +45,7 @@ const Insurances = () => (
         </Col>
         <Col md={6}>
           <ul className="list-group">
-          <li className="list-item">&rarr; MEDICAID / T19 / HUSKY</li>
+            <li className="list-item">&rarr; MEDICAID / T19 / HUSKY</li>
             <li className="list-item">&rarr; MEDICARE</li>
             <li className="list-item">&rarr; MULTIPLAN</li>
             <li className="list-item">&rarr; NORTHEAST HEALTH DIR</li>
@@ -66,12 +54,13 @@ const Insurances = () => (
             <li className="list-item">&rarr; PREMIER EYECARE</li>
             <li className="list-item">&rarr; SUPERIOR</li>
             <li className="list-item">&rarr; TRICARE</li>
-            <li className="list-item">&rarr; UNITED HEALTHCARE - (MEDICAL ONLY NO ROUTINE VISION EXAMS)</li>
+            <li className="list-item">
+              &rarr; UNITED HEALTHCARE - (MEDICAL ONLY NO ROUTINE VISION EXAMS)
+            </li>
             <li className="list-item">&rarr; UNITED HEALTHCARE MEDICARE HMO</li>
             <li className="list-item">&rarr; VISION BENEFITS OF AMERICA</li>
             <li className="list-item">&rarr; VSP</li>
             <li className="list-item">&rarr; WELLCARE</li>
-            
           </ul>
         </Col>
       </Row>

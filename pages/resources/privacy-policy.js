@@ -2,19 +2,7 @@ import Layout from "../../components/Layout";
 import Meta from "../../components/Meta";
 import Slogan from "../../components/Slogan";
 
-// import "../../styles/style.scss";
-
-// import patientForm from '../forms/Fichman-Eye-Center-Patient-Information-2016.pdf'
-
-import {
-  Grid,
-  Row,
-  Col,
-  Jumbotron,
-  Image,
-  ListGroup,
-  ListGroupItem
-} from "react-bootstrap";
+import { Grid, Row, Col } from "react-bootstrap";
 
 const PrivacyPolicy = () => (
   <Layout>
@@ -22,17 +10,6 @@ const PrivacyPolicy = () => (
       title={`Fichman Eye Center | Costs & Fees`}
       description={`About page for Fichman Costs & Fees`}
     />
-
-    {/* <Jumbotron
-      style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-career-clipboard-1919236.jpg)`,
-        backgroundRepeat: "no-repeat"
-      }}
-    >
-      <div className="jumbotron-container">
-        <h1 className="jumbotron-header-center">Costs & Fees</h1>
-      </div>
-    </Jumbotron> */}
 
     <Grid className="content-container">
       <Row className="text-section">
@@ -464,8 +441,6 @@ const PrivacyPolicy = () => (
             information privacy policies, please contact OFFICE MANAGER, 178
             Hartford Road, Manchester, CT, 06040, Telephone 860-649-9973.
           </h3>
-
-        
         </Col>
       </Row>
 

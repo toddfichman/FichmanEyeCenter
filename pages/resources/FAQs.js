@@ -1,17 +1,15 @@
 import Layout from "../../components/Layout";
 import Meta from "../../components/Meta";
 import Slogan from "../../components/Slogan";
-import VideoPlayer from "../../components/VideoPlayer";
-
-// import "../../styles/style.scss";
-
-// import patientForm from '../forms/Fichman-Eye-Center-Patient-Information-2016.pdf'
 
 import { Grid, Row, Col, Jumbotron } from "react-bootstrap";
 
 const FAQs = () => (
   <Layout>
-    <Meta title={`Fichman Eye Center | Questions`} description={`Questions`} />
+    <Meta
+      title={`Fichman Eye Center | Questions`}
+      description={`Frequently Asked Questions at Fichman Eye Center`}
+    />
 
     <Jumbotron
       style={{
@@ -84,7 +82,6 @@ const FAQs = () => (
             diameter 8 millimeters), which prevents halos and glare by
             containing the treated area within the pupil size
           </p>
-          
         </Col>
       </Row>
 

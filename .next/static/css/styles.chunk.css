@@ -11,7 +11,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   background-color: #f5f7f8; }
 
 .app {
@@ -131,11 +131,11 @@ a {
   .map-address-top-line {
     border-top: solid 1px #00487C;
     display: inline;
-    padding-bottom: .3rem; }
+    padding-bottom: 0.3rem; }
   .map-address-bottom-line {
     border-bottom: solid 1px #00487C;
     display: inline;
-    padding-bottom: .3rem; }
+    padding-bottom: 0.3rem; }
 
 .map-item {
   position: relative !important;
@@ -201,10 +201,9 @@ a {
     color: #60b0f4; }
 
 .footer-link {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #fff; }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 600px) {
   .footer-basic-centered {
     padding: 35px; }
@@ -395,6 +394,8 @@ a {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
     font-size: 1.7rem; }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+      background-color: #60b0f4; }
   .navbar-nav .open .dropdown-menu {
     text-align: center;
     background-color: #cdd1d5;
@@ -413,7 +414,8 @@ a {
 li.divider {
   background: aquamarine; }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
   border-color: #60b0f4; }
 
 .text-section {
@@ -429,7 +431,19 @@ li.divider {
   .text-section-header {
     text-align: center;
     margin-bottom: 3rem;
-    color: #60b0f4; }
+    color: #60b0f4;
+    font-size: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .text-section-header {
+        font-size: 3.5rem; } }
+    .text-section-header-large {
+      font-size: 7rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #60b0f4; }
+      @media only screen and (max-width: 37.5em) {
+        .text-section-header-large {
+          font-size: 4rem; } }
   .text-section-paragraph {
     font-size: 2rem;
     text-align: left;
@@ -581,12 +595,12 @@ li.divider {
         margin-right: auto;
         display: block; } }
   .doctors-main-text {
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-indent: 3rem;
     color: #336799; }
     @media only screen and (max-width: 75em) {
       .doctors-main-text {
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
     .doctors-main-text p {
       margin-bottom: 4rem; }
       @media only screen and (max-width: 37.5em) {

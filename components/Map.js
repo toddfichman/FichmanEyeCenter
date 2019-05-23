@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Map, Marker, GoogleApiWrapper, InfoWindow } from "google-maps-react";
+import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import { Col } from "react-bootstrap";
 
 class GoogleMap extends Component {
@@ -11,16 +11,21 @@ class GoogleMap extends Component {
             href={`http://maps.google.com/?q=${this.props.mapSearch}`}
             target="_blank"
             rel="noopener noreferrer"
+            title="Click on address for directions"
           >
             <div className="map-address">
               <strong>{this.props.name} Office</strong>
 
               <p className="map-address-subtext">
-                <span className="map-address-top-line">{this.props.street}</span>
+                <span className="map-address-top-line">
+                  {this.props.street}
+                </span>
                 <br />
                 {this.props.town}
-                <br/>
-                <span className="map-address-bottom-line">{this.props.phone}</span>
+                <br />
+                <span className="map-address-bottom-line">
+                  {this.props.phone}
+                </span>
               </p>
             </div>
           </a>
@@ -51,12 +56,6 @@ class GoogleMap extends Component {
                 )
               }
             />
-
-            <InfoWindow visible={true}>
-              <div>
-                <h1>{this.props.title}</h1>
-              </div>
-            </InfoWindow>
           </Map>
         </div>
       </Col>
@@ -67,5 +66,3 @@ class GoogleMap extends Component {
 export default GoogleApiWrapper({
   apiKey: "AIzaSyDuscURNM3rl5VvAmdcW3VpHjCyUlpAqAw"
 })(GoogleMap);
-
-// AIzaSyDhfJuDTlQfAMbtzxue0i-icMoexB-YVk8

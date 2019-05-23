@@ -2,30 +2,18 @@ import Layout from "../../components/Layout";
 import Meta from "../../components/Meta";
 import Slogan from "../../components/Slogan";
 
-// import "../../styles/style.scss";
-
-// import patientForm from '../forms/Fichman-Eye-Center-Patient-Information-2016.pdf'
-
-import {
-  Grid,
-  Row,
-  Col,
-  Jumbotron,
-  Image,
-  ListGroup,
-  ListGroupItem
-} from "react-bootstrap";
+import { Grid, Row, Col, Jumbotron } from "react-bootstrap";
 
 const CostsAndFees = () => (
   <Layout>
     <Meta
       title={`Fichman Eye Center | Costs & Fees`}
-      description={`About page for Fichman Costs & Fees`}
+      description={`Costs & Fees at Fichman Eye Center `}
     />
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-career-clipboard-1919236.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/care-connection-device-1282308.jpg)`,
         backgroundRepeat: "no-repeat"
       }}
     >
@@ -98,10 +86,11 @@ const CostsAndFees = () => (
             <li className="list-item">&rarr; Cigna Vision</li>
             <li className="list-item">&rarr; Blue View Vision</li>
             <li className="list-item">&rarr; VBA</li>
-            
           </ul>
 
-          <i className="text-section-paragraph">10% discount for students, teachers, seniors and military personnel.</i>
+          <i className="text-section-paragraph">
+            10% discount for students, teachers, seniors and military personnel.
+          </i>
         </Col>
       </Row>
 

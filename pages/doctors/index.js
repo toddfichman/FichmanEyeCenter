@@ -3,8 +3,6 @@ import Meta from "../../components/Meta";
 import Slogan from "../../components/Slogan";
 import Link from "next/link";
 
-// import "../../styles/style.scss";
-
 import { Grid, Row, Jumbotron, Col, Image, Button } from "react-bootstrap";
 
 const Doctors = () => (
@@ -16,7 +14,7 @@ const Doctors = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-afro-blazer-1056556.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/fichman-doctors.jpg)`,
         backgroundRepeat: "no-repeat"
       }}
     >

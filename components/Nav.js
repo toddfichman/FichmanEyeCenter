@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Router from 'next/router';
 
 import React, { Component } from "react";
@@ -8,7 +7,6 @@ import {
   NavItem,
   NavDropdown,
   MenuItem,
-  Collapse,
   Image
 } from "react-bootstrap";
 
@@ -17,38 +15,13 @@ import {
 const timeoutLength = 300;
 
 export default class Navigation extends Component {
-  state = {
-    isOpen: false,
-    // anchorEl: null,
-    // mouseOverButton: false,
-    // mouseOverMenu: false,
-  };
-
-  handleOpen = () => {
-    this.setState({ isOpen: true });
-  };
-
-  handleClose = () => {
-    this.setState({ isOpen: false });
-  };
-
-//   enterButton = () => {
-//     this.setState({ mouseOverButton: true });
-//   }
-
-//   leaveMenu = () => {
-//     setTimeout(() => {
-//      this.setState({ mouseOverMenu: false });
-//     }, timeoutLength);
-//  }
+  
 
   render() {
     return (
       <div>
         <Navbar inverse collapseOnSelect className="navbar-container">
           <Navbar.Header>
-
-
               <a href="/"><Image className="navbar-logo" src="/static/images/fichman-logo-new.png"/></a>
 
           <Navbar.Toggle />
@@ -71,65 +44,15 @@ export default class Navigation extends Component {
                 <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/testimonials')}>Testimonials</span></MenuItem>
                 <MenuItem eventKey={1.2}><span onClick={() => Router.push('/office-tours')}>Office Tours</span></MenuItem>
               </NavDropdown>
-             
-                {/* <NavDropdown
-                  title="About"
-                  anchorEl={this.state.anchorEl}
-                  onMouseEnter={ this.handleOpen }
-                  onMouseLeave={ this.handleClose }
-                  open={this.state.isOpen}
-                  noCaret
-                  id="about-dropdown"
-                  eventKey={3}
-                >
-                  <MenuItem eventKey={3.1}>Action</MenuItem>
-                  <MenuItem eventKey={3.2}>Another action</MenuItem>
-                  <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                </NavDropdown> */}
-
-              {/* <NavDropdown eventKey={2} title="Contact" id="basic-nav-dropdown" className="nav-btn">
-                <MenuItem eventKey={2.1}>Action</MenuItem>
-                <MenuItem eventKey={2.2}>Another action</MenuItem>
-                <MenuItem eventKey={2.3}>Something else here</MenuItem>
-                <MenuItem divider />
-                <MenuItem eventKey={2.3}>Separated link</MenuItem>
-              </NavDropdown> */}
-
-              
-             
-
-              {/* <Collapse >
-                <NavDropdown
-                  title="Contact"
-                  onMouseEnter={this.handleOpen}
-                  onMouseLeave={this.handleClose}
-                  open={this.state.isOpen}
-                  noCaret
-                  id="contact-dropdown"
-                  eventKey={4}
-                >
-                  <MenuItem eventKey={4.1}>Action</MenuItem>
-                  <MenuItem eventKey={4.2}>Another action</MenuItem>
-                  <MenuItem eventKey={4.3}>Something else here</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={4.3}>Separated link</MenuItem>
-                </NavDropdown>
-              </Collapse> */}
-
+            
               <NavDropdown eventKey={3} title="Resources" id="basic-nav-dropdown" className="nav-btn">
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/patient-education')}>Patient Education</span></MenuItem>
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/patient-forms')}>Patient Forms</span></MenuItem>
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/informational-videos')}>Informational Videos</span></MenuItem>
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/lasik')}>Lasik Information</span></MenuItem>
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/privacy-policy')}>Privacy Policy</span></MenuItem>
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/FAQs')}>FAQ</span></MenuItem>
-              <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/laser-assisted-cataract-surgery')}>Cataract Surgery</span></MenuItem>
-              
-                <MenuItem divider />
-                
-                <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/patient-education')}>Patient Education</span></MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/patient-forms')}>Patient Forms</span></MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/informational-videos')}>Informational Videos</span></MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/lasik')}>Lasik Information</span></MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/privacy-policy')}>Privacy Policy</span></MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/FAQs')}>FAQ</span></MenuItem>
+                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/laser-assisted-cataract-surgery')}>Cataract Surgery</span></MenuItem>
               </NavDropdown>
 
               <NavDropdown eventKey={3} title="Our Doctors" id="basic-nav-dropdown" className="nav-btn">
@@ -137,7 +60,6 @@ export default class Navigation extends Component {
                 <MenuItem divider />
                 <MenuItem eventKey={3.2}><span onClick={() => Router.push("/doctors/Richard-Fichman-MD")}>Richard Fichman, M.D.</span></MenuItem>
                 <MenuItem eventKey={3.3}><span onClick={() => Router.push("/doctors/Dr-Steven-Tu")}>Steve Tu, D.O.</span></MenuItem>
-                <MenuItem eventKey={3.3}>Separated link</MenuItem>
               </NavDropdown>
 
               <NavItem eventKey={0} href="#" >
@@ -146,8 +68,6 @@ export default class Navigation extends Component {
               
             </Nav>
           </Navbar.Collapse>
-
-          
         </Navbar>
       </div>
     );

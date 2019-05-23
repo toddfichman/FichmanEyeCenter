@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Map from './Map';
-
+import Map from "./Map";
 
 export default function Maps() {
   return (
     <React.Fragment>
       <div className="map-header">Locations</div>
-      
-      <Map 
+
+      <Map
         street={"178 Hartford Rd,"}
         town={"Manchester, Connecticut 06040"}
         phone={"1-877-FICHMAN"}
@@ -18,27 +17,27 @@ export default function Maps() {
         title={"Manchester"}
         mapSearch={"Fichman Eye Center Manchester"}
       />
-      <Map 
+      <Map
         street={"1144 E Main St,"}
         town={"Torrington, CT 06790"}
         phone={"1-860-489-8999"}
         lat={41.814979}
-        lng={-73.095530}
+        lng={-73.09553}
         name={"Torrrington"}
         title={"Torrington"}
         mapSearch={"Fichman Eye Center Torrington"}
       />
-      <Map 
+      <Map
         street={"1232 Corbin Ave,"}
         town={"New Britain, CT 06053"}
         phone={"1-860-357-2349"}
-        lat={41.667610}
+        lat={41.66761}
         lng={-72.806965}
         name={"New Britain"}
         title={"New Britain"}
         mapSearch={"Fichman Eye Center New Britain"}
       />
-      <Map 
+      <Map
         street={"1500 Albany Ave,"}
         town={"Hartford, CT 06112"}
         phone={"1-860-560-9563"}
@@ -49,5 +48,5 @@ export default function Maps() {
         mapSearch={"Fichman Eye Center Hartford Albany Ave"}
       />
     </React.Fragment>
-  )
+  );
 }

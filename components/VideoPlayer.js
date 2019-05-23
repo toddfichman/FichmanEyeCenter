@@ -7,21 +7,14 @@ export default function VideoPLayer(props) {
     <React.Fragment>
       <h3 className="video-title">{props.location}</h3>
       <Col className="iframe-container" xs={12}>
-        <iframe
-          allowFullScreen
-          frameBorder="0"
-          // width="1425"
-          height="400"
-          src={props.src}
-        >
-          <a
-            href={props.src}
+        <iframe allowFullScreen frameBorder="0" height="400" src={props.src}>
+          <div
             target="_blank"
             rel="noopener noreferrer"
             className="visible-link"
           >
             {props.src}
-          </a>
+          </div>
         </iframe>
       </Col>
     </React.Fragment>

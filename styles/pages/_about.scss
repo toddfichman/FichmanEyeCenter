@@ -15,6 +15,22 @@
     text-align: center;
     margin-bottom: 3rem;
     color: $color-primary;
+    font-size: 5rem;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+
+    &-large {
+      font-size: 7rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: $color-primary;
+
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+    }
   }
 
   &-paragraph {
@@ -95,10 +111,9 @@
   }
 }
 
-
 .visible-link {
   text-decoration: underline !important;
-  color: $color-primary; 
+  color: $color-primary;
 
   &:hover {
     color: $color-tertiary;

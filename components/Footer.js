@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import Router from "next/router";
 
-import { Grid, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export default class Footer extends Component {
   render() {

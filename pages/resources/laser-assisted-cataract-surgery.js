@@ -3,19 +3,7 @@ import Meta from "../../components/Meta";
 import Slogan from "../../components/Slogan";
 import Router from "next/router";
 
-// import "../../styles/style.scss";
-
-// import patientForm from '../forms/Fichman-Eye-Center-Patient-Information-2016.pdf'
-
-import {
-  Grid,
-  Row,
-  Col,
-  Jumbotron,
-  Image,
-  ListGroup,
-  ListGroupItem
-} from "react-bootstrap";
+import { Grid, Row, Col, Jumbotron } from "react-bootstrap";
 
 const CataractSurgery = () => (
   <Layout>
@@ -134,8 +122,6 @@ const CataractSurgery = () => (
           >
             Click Here For Outlook Magazine Article
           </a>
-
-          {/* <br /> */}
 
           <a
             onClick={() => Router.push("/about/testimonials")}

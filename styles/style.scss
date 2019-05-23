@@ -1,19 +1,18 @@
-@import './abstracts/mixins';
-@import './abstracts/variables';
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 
+@import "./base/base";
 
-@import './base/base';
+@import "./components/button";
+@import "./components/card";
+@import "./components/map";
+@import "./components/video";
 
-@import './components/button';
-@import './components/card';
-@import './components/map';
-@import './components/video';
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navigation";
 
-@import './layout/footer';
-@import './layout/header';
-@import './layout/navigation';
-
-@import './pages/about';
-@import './pages/contact';
-@import './pages/doctors';
-@import './pages/home';
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/doctors";
+@import "./pages/home";

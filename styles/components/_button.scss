@@ -1,28 +1,27 @@
 .btn-primary {
-    background-color: $color-primary;
-    border-color: $color-primary;
-    &:visited {
-      color: $color-white;
-    }
+  background-color: $color-primary;
+  border-color: $color-primary;
+  &:visited {
+    color: $color-white;
+  }
 }
 
 .dropdown-toggle {
   @include respond(tab-port) {
-    font-size: 2rem !important;;
+    font-size: 2rem !important;
   }
 }
 
 .nav-btn {
-    font-size: 2.4rem !important;;
+  font-size: 2.4rem !important;
 
-    @include respond(tab-port) {
-      font-size: 2rem !important;;
-    }
+  @include respond(tab-port) {
+    font-size: 2rem !important;
+  }
 }
 
 a {
   text-decoration: none !important;
-
 
   &:focus {
     outline: none;
@@ -41,4 +40,3 @@ a {
     color: $color-white;
   }
 }
-

@@ -8,9 +8,8 @@ const DrTu = () => (
   <Layout>
     <Meta
       title={`Fichman Eye Center | Dr. Steve Tu, D.O.`}
-      description={`All Doctors At Fichman Eye Center`}
+      description={`Dr. Steve Tu, D.O. At Fichman Eye Center`}
     />
-
 
     <Grid className="doctors-main">
       <Row className="doctors-main-container">
