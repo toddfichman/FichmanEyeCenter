@@ -33,6 +33,8 @@ a {
 }
 
 .button-link {
+  color: $color-white;
+  // font-size: 2rem;
   &:link {
     color: $color-white;
   }

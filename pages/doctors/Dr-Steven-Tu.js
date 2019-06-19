@@ -17,7 +17,7 @@ const DrTu = () => (
           <h1 className="doctors-main-title">Dr. Steve Tu, D.O.</h1>
           <Image
             className="doctors-main-img"
-            src="../../static/images/drTu.jpg"
+            src="../../static/images/drTu.jpeg"
             rounded
           />
 

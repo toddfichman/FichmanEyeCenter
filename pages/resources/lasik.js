@@ -23,7 +23,7 @@ const Lasik = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-career-clipboard-1919236.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-career-clipboard-1919236.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >

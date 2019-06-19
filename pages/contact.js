@@ -14,7 +14,7 @@ const Contact = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-afro-blazer-1056556.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/adult-afro-blazer-1056556.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >
@@ -29,7 +29,7 @@ const Contact = () => (
       <Row>
         <HoursCard
           office={"Manchester"}
-          phone={"1-(860)-649-9973"}
+          phone={"+1-(860)-649-9973"}
           monday={"8:00 AM - 5:00 PM"}
           tuesday={"8:00 AM - 5:00 PM"}
           wednesday={"10:00 AM - 7:00 PM"}
@@ -38,7 +38,7 @@ const Contact = () => (
         />
         <HoursCard
           office={"Torrington"}
-          phone={"1-(860)-489-8999"}
+          phone={"+1-(860)-489-8999"}
           monday={"8:00 AM - 5:00 PM"}
           tuesday={"8:00 AM - 5:00 PM"}
           wednesday={"10:00 AM - 7:00 PM"}
@@ -47,7 +47,7 @@ const Contact = () => (
         />
         <HoursCard
           office={"New Britain"}
-          phone={"1-(860)-357-2349"}
+          phone={"+1-(860)-357-2349"}
           monday={"Closed"}
           tuesday={"8:00 AM - 5:00 PM"}
           wednesday={"Closed"}
@@ -56,7 +56,7 @@ const Contact = () => (
         />
         <HoursCard
           office={"Hartford"}
-          phone={"1-(860)-560-9563"}
+          phone={"+1-(860)-560-9563"}
           monday={"8:00 AM - 5:00 PM"}
           tuesday={"Closed"}
           wednesday={"10:00 AM - 5:00 PM"}

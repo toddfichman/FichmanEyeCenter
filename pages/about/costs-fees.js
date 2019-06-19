@@ -13,7 +13,7 @@ const CostsAndFees = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/care-connection-device-1282308.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/care-connection-device-1282308.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >

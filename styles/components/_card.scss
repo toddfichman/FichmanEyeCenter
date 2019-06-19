@@ -24,10 +24,12 @@
   &-body {
     font-family: $secondary-font;
     color: $color-tertiary;
+    font-size: 1.8rem;
   }
 
   &-button {
     margin-top: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -64,4 +66,8 @@
   &-time {
     float: right;
   }
+}
+
+.review-star {
+  color: orange;
 }

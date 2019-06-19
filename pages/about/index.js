@@ -13,7 +13,7 @@ const About = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/background-binoculars-black-267596.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/background-binoculars-black-267596.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >

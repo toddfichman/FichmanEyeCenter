@@ -14,7 +14,7 @@ const Doctors = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/fichman-doctors.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/fichman-doctors.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >
@@ -69,7 +69,7 @@ const Doctors = () => (
           </h3>
           <Image
             className="doctors-img"
-            src="../../static/images/drTu.jpg"
+            src="../../static/images/drTu.jpeg"
             rounded
           />
 
@@ -99,7 +99,7 @@ const Doctors = () => (
           </h3>
           <Image
             className="doctors-img"
-            src="../../static/images/drDelisle.jpg"
+            src="../../static/images/drDelisle.jpeg"
             rounded
           />
 
@@ -131,7 +131,7 @@ const Doctors = () => (
           </h3>
           <Image
             className="doctors-img"
-            src="../../static/images/drBouligny.jpg"
+            src="../../static/images/drBouligny.jpeg"
             rounded
           />
 
@@ -164,7 +164,7 @@ const Doctors = () => (
           <h3 className="doctors-short-title">Dr. Carly Olsin, OD</h3>
           <Image
             className="doctors-img"
-            src="../../static/images/drOslin.jpg"
+            src="../../static/images/drOslin.jpeg"
             rounded
           />
 

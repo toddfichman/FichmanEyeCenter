@@ -5,6 +5,7 @@ import Meta from "../components/Meta";
 import Locations from "../components/Locations";
 import Slogan from "../components/Slogan";
 import Card from "../components/Card";
+import Testimonials from "../components/Testimonials";
 
 import { Grid, Row, Jumbotron, Button } from "react-bootstrap";
 
@@ -17,7 +18,7 @@ const Home = () => (
     <Jumbotron
       className="jumbo"
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/fichman-doctors.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/fichman-doctors.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >
@@ -55,7 +56,7 @@ const Home = () => (
             "Donec non elit massa. Cras at neque in lectus euismod rutrum quis et odio. Suspendisse id iaculis nisi. Curabitur egestas nibh odio, non efficitur risus efficitur quis. Sed nec justo ut nunc blandit tempus vel ut tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ut dapibus velit. Proin scelerisque eu ligula sit amet efficitur. Nam accumsan elementum elit, ultricies efficitur ante venenatis at."
           }
           buttonText={"Resources"}
-          link={"/resources"}
+          link={"/resources/patient-education"}
         />
         <Card
           header={"Testimonials"}
@@ -63,13 +64,29 @@ const Home = () => (
             "Donec non elit massa. Cras at neque in lectus euismod rutrum quis et odio. Suspendisse id iaculis nisi. Curabitur egestas nibh odio, non efficitur risus efficitur quis. Sed nec justo ut nunc blandit tempus vel ut tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ut dapibus velit. Proin scelerisque eu ligula sit amet efficitur. Nam accumsan elementum elit, ultricies efficitur ante venenatis at."
           }
           buttonText={"Testimonials"}
-          link={"/about"}
+          link={"/about/testimonials"}
         />
       </Row>
 
       <Row className="slogan-section">
         <Slogan />
       </Row>
+
+      <Row className="tesimonial-container">
+        <Testimonials />
+      </Row>
+      <div className="testimonial-button-container">
+        <Button type="submit" bsStyle="primary" className="testimonial-button">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://birdeye.com/fichman-eye-center-149816264924653"
+            className="testimonial-button-link"
+          >
+            Read More Testimonials
+          </a>
+        </Button>
+      </div>
 
       <Row className="map-container">
         <Locations />

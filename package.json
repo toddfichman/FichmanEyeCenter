@@ -2,17 +2,26 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "now-build": "next build",
+    "deploy": "now"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.0",
     "google-maps-react": "^2.0.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-optipng": "^7.0.0",
     "next": "7.0.2",
+    "next-optimized-images": "^2.5.1",
     "next-page-transitions": "^1.0.0-beta.2",
     "node-sass": "^4.7.2",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-ga": "^2.5.7"
   }
 }

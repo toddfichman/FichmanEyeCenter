@@ -30,40 +30,40 @@ export default class Navigation extends Component {
           <Navbar.Collapse>
             <Nav pullRight className="nav-bar">
 
-              <NavItem eventKey={0} href="#" >
-                <span className="nav-btn" onClick={() => Router.push('/')}>Home</span> 
+              <NavItem className="nav-btn" eventKey={0} onClick={() => Router.push('/')} >
+                Home 
               </NavItem>
               <NavDropdown eventKey={1} title="About" id="basic-nav-dropdown" className="nav-btn">
-                <MenuItem eventKey={1.1}><span onClick={() => Router.push('/about')}>About Fichman Eye Center</span></MenuItem> 
+                <MenuItem onClick={() => Router.push('/about')} eventKey={1.1}>About Fichman Eye Center</MenuItem> 
                 <MenuItem divider/>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/surgery-center')}>Surgey Center</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/optical-boutique')}>Optical Boutique</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/costs-fees')}>Costs & Fees</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/insurances')}>Insurances We Accept</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/patient-financing')}>Patient Financing</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/about/testimonials')}>Testimonials</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/office-tours')}>Office Tours</span></MenuItem>
+                <MenuItem onClick={() => Router.push('/about/surgery-center')} eventKey={1.2}>Surgey Center</MenuItem>
+                <MenuItem onClick={() => Router.push('/about/optical-boutique')} eventKey={1.2}>Optical Boutique</MenuItem>
+                <MenuItem onClick={() => Router.push('/about/costs-fees')} eventKey={1.2}>Costs & Fees</MenuItem>
+                <MenuItem onClick={() => Router.push('/about/insurances')} eventKey={1.2}>Insurances We Accept</MenuItem>
+                <MenuItem onClick={() => Router.push('/about/patient-financing')} eventKey={1.2}>Patient Financing</MenuItem>
+                <MenuItem onClick={() => Router.push('/about/testimonials')} eventKey={1.2}>Testimonials</MenuItem>
+                <MenuItem onClick={() => Router.push('/office-tours')}eventKey={1.2}>Office Tours</MenuItem>
               </NavDropdown>
             
               <NavDropdown eventKey={3} title="Resources" id="basic-nav-dropdown" className="nav-btn">
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/patient-education')}>Patient Education</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/patient-forms')}>Patient Forms</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/informational-videos')}>Informational Videos</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/lasik')}>Lasik Information</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/privacy-policy')}>Privacy Policy</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/FAQs')}>FAQ</span></MenuItem>
-                <MenuItem eventKey={1.2}><span onClick={() => Router.push('/resources/laser-assisted-cataract-surgery')}>Cataract Surgery</span></MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/patient-education')}eventKey={1.2}> Patient Education</MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/patient-forms')} eventKey={1.2}> Patient Forms</MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/informational-videos')} eventKey={1.2}> Informational Videos</MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/lasik')} eventKey={1.2}> Lasik Information</MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/privacy-policy')} eventKey={1.2}> Privacy Policy</MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/FAQs')} eventKey={1.2}> FAQ</MenuItem>
+                <MenuItem onClick={() => Router.push('/resources/laser-assisted-cataract-surgery')} eventKey={1.2}> Cataract Surgery</MenuItem>
               </NavDropdown>
 
               <NavDropdown eventKey={3} title="Our Doctors" id="basic-nav-dropdown" className="nav-btn">
-                <MenuItem eventKey={3.1}><span onClick={() => Router.push('/doctors')}>Meet Our Doctors</span></MenuItem>
+                <MenuItem onClick={() => Router.push('/doctors')} eventKey={3.1}> Meet Our Doctors</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={3.2}><span onClick={() => Router.push("/doctors/Richard-Fichman-MD")}>Richard Fichman, M.D.</span></MenuItem>
-                <MenuItem eventKey={3.3}><span onClick={() => Router.push("/doctors/Dr-Steven-Tu")}>Steve Tu, D.O.</span></MenuItem>
+                <MenuItem onClick={() => Router.push("/doctors/Richard-Fichman-MD")} eventKey={3.2}> Richard Fichman, M.D.</MenuItem>
+                <MenuItem onClick={() => Router.push("/doctors/Dr-Steven-Tu")} eventKey={3.3}> Steve Tu, D.O.</MenuItem>
               </NavDropdown>
 
-              <NavItem eventKey={0} href="#" >
-                <span className="nav-btn" onClick={() => Router.push('/contact')}>Contact</span> 
+              <NavItem eventKey={0} className="nav-btn" onClick={() => Router.push('/contact')} >
+                 Contact 
               </NavItem>
               
             </Nav>

@@ -13,7 +13,7 @@ const OpticalBoutique = () => (
 
     <Jumbotron
       style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/eyeglasses-eyesight-glass-items-1627639.jpg)`,
+        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/images/eyeglasses-eyesight-glass-items-1627639.jpeg)`,
         backgroundRepeat: "no-repeat"
       }}
     >

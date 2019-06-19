@@ -11,7 +11,7 @@ export default function HoursCard(props) {
                 {props.office} Office
               </Panel.Title>
               <Panel.Title className="card-header-secondary">
-                <a href={`tel: ${props.phone}`}>Phone: {props.phone}</a> 
+                <a href={`tel: ${props.phone}`}>Phone:  <span style={{textDecoration: "underline"}}>{props.phone}</span></a> 
               </Panel.Title>
             </Panel.Heading>
             <div className="contact-hours-wrapper">

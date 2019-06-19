@@ -12,17 +12,6 @@ const DrFichman = () => (
       description={`Richard Fichman, M.D.`}
     />
 
-    {/* <Jumbotron
-      style={{
-        backgroundImage: `linear-gradient(0deg,rgba(96, 176, 244,0.5),rgba(96, 176, 244,0.5)), url(../static/adult-afro-blazer-1056556.jpg)`,
-        backgroundRepeat: "no-repeat"
-      }}
-    >
-      {" "}
-      <div className="jumbotron-container">
-        <h1 className="jumbotron-header-center">Ophthalmologist, Medical Director: Richard A. Fichman, MD</h1>
-      </div>
-    </Jumbotron> */}
 
     <Grid className="doctors-main">
       <Row className="doctors-main-container">
