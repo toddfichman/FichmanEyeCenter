@@ -22,16 +22,22 @@ export default class MyApp extends App {
       <Container>
         <Head>
           <title>
-            Fichman Eye Center | CT Eye Care | Cataract Surgery in CT
+            Fichman Eye Center | CT Eye Care 
           </title>
           <meta
             name="description"
-            content="Fichman Eye Center is Home of Connecticut's best eye surgery providers with a full service eye center."
+            content="Fichman Eye Center is Home to Connecticut's Best Eye Surgery Providers With A Full Service Eye Center."
           />
           <meta
             name="keywords"
-            content="CT Eye surgery, Best Eye Surgery, Full service, Eye Center"
+            content="CT eye doctor, Connecticut eye doctor, glaucoma, eyeglasses,cataracts,glasses, contacts,cataract surgery, sunglasses, CT Eye surgery, Best Eye Surgery, Full service, Eye Center, lasik"
           />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Fichman Eye Center | CT Eye Care" />
+          <meta property="og:description" content="Fichman Eye Center is Home to Connecticut's Best Eye Surgery Providers With A Full Service Eye Center."/>
+          <meta property="og:site_name" content="Fichman Eye Center" />
         </Head>
         <PageTransition timeout={500} classNames="page-transition">
           <Component {...pageProps} key={router.route} />
