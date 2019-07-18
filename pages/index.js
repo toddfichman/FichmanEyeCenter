@@ -2,13 +2,13 @@ import Link from "next/link";
 
 import Layout from "../components/Layout";
 import Meta from "../components/Meta";
-import Locations from "../components/Locations";
+// import Locations from "../components/Locations";
 import Slogan from "../components/Slogan";
 // import Card from "../components/Card";
 import Testimonials from "../components/Testimonials";
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 
-// const Locations = dynamic(() => import('../components/Locations'));
+const Locations = dynamic(() => import('../components/Locations'));
 
 import { Grid, Row, Jumbotron, Button, Col } from "react-bootstrap";
 
