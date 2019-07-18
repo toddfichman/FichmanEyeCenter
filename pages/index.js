@@ -4,10 +4,13 @@ import Layout from "../components/Layout";
 import Meta from "../components/Meta";
 import Locations from "../components/Locations";
 import Slogan from "../components/Slogan";
-import Card from "../components/Card";
+// import Card from "../components/Card";
 import Testimonials from "../components/Testimonials";
+// import dynamic from 'next/dynamic';
 
-import { Grid, Row, Jumbotron, Button } from "react-bootstrap";
+// const Locations = dynamic(() => import('../components/Locations'));
+
+import { Grid, Row, Jumbotron, Button, Col } from "react-bootstrap";
 
 const Home = () => (
   <Layout>
@@ -33,7 +36,7 @@ const Home = () => (
             bsStyle="primary"
           >
             <Link href="/contact">
-              <a className="button-link">Schedule Your Appointment Today</a>
+              <a className="button-link">Schedule An Appointment Today</a>
             </Link>
           </Button>
         </p>
@@ -41,7 +44,40 @@ const Home = () => (
     </Jumbotron>
 
     <Grid className="content-container">
-      <Row className="card-row">
+      <Row className="text-section">
+        <Col lg={12}>
+          <h1 className="text-section-header">
+            Connecticut's Leading Eye Care Professionals
+          </h1>
+          <p className="text-section-paragraph">
+            When it comes to eye care, Fichman Eye Center has a wide variety of
+            CERTIFIED OPTICIANS who are specialized in enhancing your eyesight
+            for strength and clarity. With four locations around Connecticut, we
+            can help residents from all corners of the state with their visual
+            needs and answer any questions they might have.
+          </p>
+          <p className="text-section-paragraph">
+            We strive to provide the best quality vision with our optical
+            boutiques at each facility that help you find the perfect eyewear or
+            contact lenses to suit your lifestyle. With a variety of brands
+            available, you can enhance your eyesight in style.
+          </p>
+          <p className="text-section-paragraph">
+            If you want to ditch the glasses and contact lenses altogether, we
+            offer innovative LASER CATARACT SURGERY, which provides an accurate
+            and successful procedure for vision excellence. This technology
+            utilizes an advanced laser to deliver a precise incision for safety
+            and care. You will be able to enjoy your enhanced eyesight without
+            ever having to rely on visual assistance again.
+          </p>
+          <p className="text-section-paragraph">
+            Whatever your visual needs, our friendly and professional staff are
+            here to help you see. Contact one of our specialists today, to see
+            how Fichman Eye Center can benefit you.
+          </p>
+        </Col>
+      </Row>
+      {/* <Row className="card-row">
         <Card
           header={"About"}
           content={
@@ -66,7 +102,7 @@ const Home = () => (
           buttonText={"Testimonials"}
           link={"/about/testimonials"}
         />
-      </Row>
+      </Row> */}
 
       <Row className="slogan-section">
         <Slogan />
@@ -76,7 +112,14 @@ const Home = () => (
         <Testimonials />
       </Row>
       <div className="testimonial-button-container">
-        <Button type="submit" bsStyle="primary" className="testimonial-button">
+        <Button
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://birdeye.com/fichman-eye-center-149816264924653"
+          type="submit"
+          bsStyle="primary"
+          className="testimonial-button"
+        >
           <a
             target="_blank"
             rel="noopener noreferrer"

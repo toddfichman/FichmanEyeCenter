@@ -427,8 +427,7 @@ li.divider {
 
 .text-section {
   margin: 0 1rem;
-  line-height: 3.25rem;
-  padding: 0 8rem; }
+  line-height: 3.25rem; }
   @media only screen and (max-width: 75em) {
     .text-section {
       padding: 0; } }
@@ -452,15 +451,20 @@ li.divider {
         .text-section-header-large {
           font-size: 4rem; } }
   .text-section-paragraph {
+    padding: 0 7rem;
     font-size: 2rem;
     text-align: left;
     font-family: "Open Sans", sans-serif;
     color: #00487C;
     margin-bottom: 3rem;
     text-indent: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .text-section-paragraph {
+        padding: 0 .5rem; } }
     @media only screen and (max-width: 37.5em) {
       .text-section-paragraph {
-        font-size: 1.7rem; } }
+        font-size: 1.7rem;
+        padding: 0 .2rem; } }
   .text-section-footer {
     color: #60b0f4;
     padding-bottom: 2rem; }

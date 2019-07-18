@@ -1,29 +1,122 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_902c0d8e342f4a2f6d51.js"
-  ],
+  "devFiles": [],
   "pages": {
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/css/styles.0948e073.chunk.css",
+      "static/chunks/styles.a9df3bb00b5f43469191.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
     ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/about/costs-fees": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
     ],
     "/about": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/about/insurances": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/about/optical-boutique": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/about/patient-financing": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/about/surgery-center": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/about/testimonials": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/contact": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/doctors/Dr-Steven-Tu": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/doctors": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/doctors/Richard-Fichman-MD": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/office-tours": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/FAQs": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/informational-videos": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/laser-assisted-cataract-surgery": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/lasik": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/patient-education": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/patient-forms": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
+    ],
+    "/resources/privacy-policy": [
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
     ],
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-f4542de9ce6104e90191.js",
+      "static/chunks/commons.434e7b02fd7c114b15dd.js",
+      "static/runtime/main-ed1c913237b8b42eafa7.js"
     ]
   }
 }

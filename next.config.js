@@ -25,12 +25,15 @@
 
 // module.exports = withSass(nextConfig);
  
+// const { PHASE_PRODUCTION_SERVER } =
+//   process.env.NODE_ENV === 'development'
+//     ? {}
+//     : !process.env.NOW_REGION
+//       ? require('next/constants')
+//       : require('next-server/constants');
+
 const { PHASE_PRODUCTION_SERVER } =
-  process.env.NODE_ENV === 'development'
-    ? {}
-    : !process.env.NOW_REGION
-      ? require('next/constants')
-      : require('next-server/constants');
+  process.env.NODE_ENV === 'development' ? {} : require('next/constants');
 
 module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
@@ -42,6 +45,10 @@ module.exports = (phase, { defaultConfig }) => {
   const withSass = require('@zeit/next-sass')
   const withOptimizedImages = require('next-optimized-images');
 
+  // return withSass(withOptimizedImages({
+  //   handleImages: ['jpeg', 'png'],
+  //   optimizeImages: true,
+  // }));
   return withSass(withOptimizedImages({
     handleImages: ['jpeg', 'png'],
     optimizeImages: true,

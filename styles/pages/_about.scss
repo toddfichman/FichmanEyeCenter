@@ -1,7 +1,7 @@
 .text-section {
   margin: 0 1rem;
   line-height: 3.25rem;
-  padding: 0 8rem;
+  
 
   @include respond(tab-land) {
     padding: 0;
@@ -16,6 +16,8 @@
     margin-bottom: 3rem;
     color: $color-primary;
     font-size: 5rem;
+
+    
 
     @include respond(phone) {
       font-size: 3.5rem;
@@ -34,6 +36,7 @@
   }
 
   &-paragraph {
+    padding: 0 7rem;
     font-size: 2rem;
     text-align: left;
     font-family: $secondary-font;
@@ -41,8 +44,13 @@
     margin-bottom: 3rem;
     text-indent: 4rem;
 
+    @include respond(tab-land) {
+      padding: 0 .5rem;
+    }
+
     @include respond(phone) {
       font-size: 1.7rem;
+      padding: 0 .2rem;
     }
   }
 
