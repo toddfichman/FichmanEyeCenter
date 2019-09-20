@@ -1396,11 +1396,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_0__);
 
 var initGA = function initGA() {
-  console.log('GA init');
+  // console.log('GA init')
   react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.initialize('UA-142162111-2');
 };
 var logPageView = function logPageView() {
-  console.log("Logging pageview for ".concat(window.location.pathname));
+  // console.log(`Logging pageview for ${window.location.pathname}`)
   react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.set({
     page: window.location.pathname
   });

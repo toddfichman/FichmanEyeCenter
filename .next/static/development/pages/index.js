@@ -41698,11 +41698,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
 
 var initGA = function initGA() {
-  console.log('GA init');
+  // console.log('GA init')
   react_ga__WEBPACK_IMPORTED_MODULE_0__["default"].initialize('UA-142162111-2');
 };
 var logPageView = function logPageView() {
-  console.log("Logging pageview for ".concat(window.location.pathname));
+  // console.log(`Logging pageview for ${window.location.pathname}`)
   react_ga__WEBPACK_IMPORTED_MODULE_0__["default"].set({
     page: window.location.pathname
   });
